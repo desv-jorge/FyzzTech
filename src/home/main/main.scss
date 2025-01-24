@@ -59,6 +59,12 @@ section{
 }
 
 @media (max-width: 1000px) {
+    section{
+        h2{
+            font-size: 28px;
+            
+        }
+    }
     #cards{
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
