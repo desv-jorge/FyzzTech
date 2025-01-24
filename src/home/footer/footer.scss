@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap');
+
+footer{
+    background-color: #001333;
+
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Agdasima", serif;
+    font-weight: 400;
+    color: white;
+    h2{
+        font-size: 28px;
+        padding: 0;
+        margin: 0;
+        padding-top: 50px;
+    }
+    p{
+        font-size: 20px;
+    }
+    div{
+        justify-content: center;
+        img{
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            text-decoration: none;
+            color: inherit;
+        }
+        #Linkedin{
+            width: 85px;
+            height: 85px;
+            padding-bottom: 8px;
+        }
+    }
+    img{
+        width: 70%;
+        padding-top: 10px;
+        border-radius: 20%;
+        margin-bottom: 30px;
+    }
+}
