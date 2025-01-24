@@ -43,3 +43,11 @@ footer{
         margin-bottom: 30px;
     }
 }
+
+@media (max-width: 480px) {
+    footer{
+        p{
+            padding-left: 30px;
+        }
+    }
+}
