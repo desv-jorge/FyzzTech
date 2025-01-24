@@ -12,9 +12,9 @@ export default function Main(){
                 <h2>NOTEBOOKS - LAPTOPS</h2>
                 <section id="cards">
                     <article>
-                        <figure>
+                        
                             <img src="https://i.postimg.cc/bNyW2QX4/produto-1.png" alt="imagem do produto" />
-                        </figure>
+                        
                         <div>
                             <h3>Notebook Gamer Acer Nitro 5</h3>
                             <p>R$ 3.479,00</p>
@@ -22,9 +22,9 @@ export default function Main(){
                     </article>
 
                     <article>
-                        <figure>
+                        
                             <img src="https://i.postimg.cc/bNyW2QX4/produto-1.png" alt="imagem do produto" />
-                        </figure>
+                        
                         <div>
                             <h3>Notebook Gamer Acer Nitro 5</h3>
                             <p>R$ 3.479,00</p>
@@ -32,9 +32,9 @@ export default function Main(){
                     </article>
 
                     <article>
-                        <figure>
+                        
                             <img src="https://i.postimg.cc/bNyW2QX4/produto-1.png" alt="imagem do produto" />
-                        </figure>
+                        
                         <div>
                             <h3>Notebook Gamer Acer Nitro 5</h3>
                             <p>R$ 3.479,00</p>
@@ -47,32 +47,32 @@ export default function Main(){
                 <h2>FONES DE OUVIDO</h2>
                 <section id="cards">
                     <article>
-                        <figure>
+                        
                             <img src="https://i.postimg.cc/TPgCswMr/produto-2.png" alt="imagem do produto" />
-                        </figure>
+                        
                         <div>
                             <h3>Fone de Ouvido Bluetooth</h3>
-                            <p>R$ 119,99</p>
+                            <p>R$ 74,90</p>
                         </div>
                     </article>
 
                     <article>
-                        <figure>
+                        
                             <img src="https://i.postimg.cc/TPgCswMr/produto-2.png" alt="imagem do produto" />
-                        </figure>
+                        
                         <div>
                             <h3>Fone de Ouvido Bluetooth</h3>
-                            <p>R$ 119,99</p>
+                            <p>R$ 74,90</p>
                         </div>
                     </article>
 
                     <article>
-                        <figure>
+                        
                             <img src="https://i.postimg.cc/TPgCswMr/produto-2.png" alt="imagem do produto" />
-                        </figure>
+                        
                         <div>
                             <h3>Fone de Ouvido Bluetooth</h3>
-                            <p>R$ 119,99</p>
+                            <p>R$ 74,90</p>
                         </div>
                     </article>
                 </section>
@@ -82,32 +82,32 @@ export default function Main(){
                 <h2>TECLADOS</h2>
                 <section id="cards">
                     <article>
-                        <figure>
+                        
                             <img src="https://i.postimg.cc/tgJxcR1B/produto-3.png" alt="imagem do produto" />
-                        </figure>
+                        
                         <div>
                             <h3>Teclado mecânico gamer</h3>
-                            <p>R$ 74,90</p>
+                            <p>R$ 119,99</p>
                         </div>
                     </article>
 
                     <article>
-                        <figure>
+                        
                             <img src="https://i.postimg.cc/tgJxcR1B/produto-3.png" alt="imagem do produto" />
-                        </figure>
+                        
                         <div>
                             <h3>Teclado mecânico gamer</h3>
-                            <p>R$ 74,90</p>
+                            <p>R$ 119,99</p>
                         </div>
                     </article>
 
                     <article>
-                        <figure>
+                        
                             <img src="https://i.postimg.cc/tgJxcR1B/produto-3.png" alt="imagem do produto" />
-                        </figure>
+                        
                         <div>
                             <h3>Teclado mecânico gamer</h3>
-                            <p>R$ 119,99 </p>
+                            <p>R$ 119,99</p>
                         </div>
                     </article>
                 </section>
