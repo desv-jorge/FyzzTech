@@ -53,7 +53,12 @@ section{
         }
     
         div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             font-family: "Abyssinica SIL", serif;
+            gap: 0px;
             h2{
                 font-size: 20px;
                 padding: 0px;
@@ -61,8 +66,25 @@ section{
             }
             p{
                 font-size: 24px;
-                padding: 0px;
+                padding: 0;
                 margin: 0px;
+            }
+        }
+        button{
+            margin: 10px;
+            padding: 5px;
+            width: 90%;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(13, 104, 104);
+            color: white;
+            font-family: "Abyssinica SIL", serif;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(82, 224, 182);
+                color: black;
+                border: rgb(74, 74, 218) solid 0.5px;
+                padding: 4px;
             }
         }
     }
