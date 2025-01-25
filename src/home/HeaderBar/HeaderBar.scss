@@ -48,7 +48,7 @@ header{
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 580px) {
     .NavItens{
         font-size: 20px;
     }
@@ -62,4 +62,19 @@ header{
         height: 15px;
         padding: 10px;
     }
+}
+@media (max-width: 360px){
+    .NavItens{
+        font-size: 14px;
+    }
+    #Logo{
+        width: 45px;
+        height: 45px;
+        margin-left: 8px;
+    }
+    #Search{
+        width: 10px;
+        height: 10px;
+        padding: 5px;
+    } 
 }
