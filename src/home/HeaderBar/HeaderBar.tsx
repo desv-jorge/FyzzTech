@@ -12,7 +12,7 @@ export default function Header(){
                 </ul>
             </nav>
             <nav>
-                <a href="" id="Search"><img src="https://i.postimg.cc/BQjftTfN/LUPA.png" alt="pesquisar produto" id="Search"/></a>
+                <a href=""><img src="https://i.postimg.cc/BQjftTfN/LUPA.png" alt="pesquisar produto" id="Search"/></a>
             </nav>
 
         </header>
