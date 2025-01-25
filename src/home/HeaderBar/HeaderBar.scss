@@ -64,6 +64,10 @@ header{
     }
 }
 @media (max-width: 360px){
+    header{
+        justify-content: center;
+        align-items: center;
+    }
     .NavItens{
         font-size: 14px;
     }
