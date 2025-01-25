@@ -6,7 +6,7 @@ export default function Footer (){
 
         <footer>
             <h2>FYZZTECH©</h2>
-            <p>contate-me através do email: fyzztech@gmail.com</p>
+            <p>email de contato: fyzztech@gmail.com</p>
             <div>
                 <a href=""> <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" id="Linkedin"/> </a>
                 <a href=""> <img src="https://i.postimg.cc/Jh94rRn7/Logo-Insta.png" alt="Instagram" /> </a>

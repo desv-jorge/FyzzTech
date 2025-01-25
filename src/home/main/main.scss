@@ -20,13 +20,23 @@ section{
 
 }
 
+#capsula{
+    cursor: grab;
+    overflow: hidden;
+    max-width: 65%;
+}
+
 #cards{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
     padding-bottom: 20px;
+    flex: none;
     
     article{
+        flex: 0 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -65,19 +75,14 @@ section{
             
         }
     }
+    #capsula{
+        max-width: 85%;
+        overflow-x:scroll ;
+    }
     #cards{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 0px;
-
-        flex-wrap: wrap;
-
         article{
-            width: 95%;
-            height: auto;
-            margin: 5px;
-            
-                
+            width: 45%;
+            height: auto;        
             img {
                 width: 88%;
                 height: 100%;
@@ -85,15 +90,15 @@ section{
             }
            
             div{
+                padding-left: 10px;
                 h3{
-                    font-size: 16px;
+                    font-size: 13px;
                     padding: 0;
                     margin: 0;
 
-                    flex-wrap: wrap;
                 }
                 p{
-                    font-size: 20px;
+                    font-size: 18px;
                     padding: 0;
                     margin: 0;
                 }
