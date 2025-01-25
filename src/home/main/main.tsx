@@ -27,7 +27,7 @@ export default function Main() {
 
         {Object.entries(Produtos).map(([produto, dados]) => {
           return (
-            <section key={produto}>
+            <section key={produto} id="container">
               <h2>{dados.CatalogTitle}</h2>
 
                 <motion.div ref={Carousel} id="capsula" whileTap={{cursor: "grabbing"}}>

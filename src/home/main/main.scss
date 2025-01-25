@@ -25,6 +25,9 @@ section{
     overflow: hidden;
     max-width: 65%;
 }
+#container{
+    max-width: 70%;
+}
 
 #cards{
     display: flex;
@@ -100,6 +103,9 @@ section{
     #capsula{
         max-width: 85%;
         overflow-x:scroll ;
+    }
+    #container{
+        max-width: 86%;
     }
     #cards{
         article{
