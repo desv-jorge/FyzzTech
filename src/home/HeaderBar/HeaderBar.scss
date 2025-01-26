@@ -50,6 +50,9 @@ header{
 }
 
 @media (max-width: 580px) {
+    header{
+        height: 80px;
+    }
     .NavItens{
         font-size: 20px;
     }
@@ -65,6 +68,9 @@ header{
     }
 }
 @media (max-width: 360px){
+    header{
+        height: 50px;
+    }
     nav{
         margin:0 0 0 10px;
         ul{
