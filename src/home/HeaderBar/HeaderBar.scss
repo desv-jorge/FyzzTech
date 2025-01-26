@@ -22,10 +22,11 @@ header{
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        margin-left: 15px;
         ul{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
             list-style: none;
             gap: 30px;
             a{
@@ -63,21 +64,38 @@ header{
     }
 }
 @media (max-width: 360px){
+    nav{
+        margin:0 0 0 10px;
+        ul{
+            gap: 0px;
+            padding: 0;
+            margin: 0;
+            #start{
+                margin-left: 15px;
+            }
+        }
+        img{
+            max-width: 50px;
+            max-height: 50px;
+        }
+    }
     header{
         justify-content: center;
         align-items: center;
+        gap: 25x;
     }
     .NavItens{
         font-size: 14px;
     }
     #Logo{
-        width: 45px;
-        height: 45px;
-
+        padding: 0;
     }
-    #Search{
-        width: 10px;
-        height: 10px;
-        padding: 0px;
-    } 
+
+    a{
+        img{
+            max-width: 16px;
+            max-height: 16px;
+            padding: 0 0 px;
+        }
+    }
 }

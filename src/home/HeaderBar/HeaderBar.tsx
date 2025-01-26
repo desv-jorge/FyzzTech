@@ -7,7 +7,7 @@ export default function Header(){
             <nav>
                 <img src="https://i.postimg.cc/J4NWC1N5/LOGO.png" alt="Logo" id="Logo"/>
                 <ul>
-                    <li><a href="" className="NavItens">Início</a></li>
+                    <li id="start" ><a href="" className="NavItens">Início</a></li>
                     <li><a href="" className="NavItens">Catálogo</a></li>
                 </ul>
             </nav>
