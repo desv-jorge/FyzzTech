@@ -24,7 +24,7 @@ footer{
     div{
         justify-content: center;
         img{
-            border-radius: 100%;
+            border-radius: 100px;
             width: 100px;
             height: 100px;
             text-decoration: none;
@@ -33,6 +33,12 @@ footer{
         #Linkedin{
             width: 85px;
             height: 85px;
+            padding-bottom: 8px;
+        }
+        #tiktok{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
             padding-bottom: 8px;
         }
     }
