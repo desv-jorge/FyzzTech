@@ -12,17 +12,18 @@ header{
     justify-content: space-between;
 
 
-    #Logo{
-        width: 85px;
-        height: 85px;
-    }
-
+    
     nav{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         margin-left: 15px;
+        #Logo{
+            margin-left: 15px;
+            width: 85px;
+            height: 85px;
+        }
         ul{
             display: flex;
             flex-direction: row;
@@ -42,7 +43,7 @@ header{
         #Search{
             width: 30px;
             height: 30px;
-            padding-right: 15px;
+            padding-right: 25px;
         }
 
     }
