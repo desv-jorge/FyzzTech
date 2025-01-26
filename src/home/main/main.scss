@@ -101,7 +101,7 @@ section{
         }
     }
     #capsula{
-        max-width: 85%;
+        max-width: 100%;
         overflow-x:scroll ;
     }
     #container{
@@ -109,8 +109,9 @@ section{
     }
     #cards{
         article{
-            width: 50%;
-            height: auto;        
+            width: 60%;
+            height: auto;    
+            margin-left: 5px;    
             img {
                 width: 88%;
                 height: 100%;
