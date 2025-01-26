@@ -30,7 +30,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <nav>
+      {/* <nav>
         <a href="">
           <img
             src="https://i.postimg.cc/BQjftTfN/LUPA.png"
@@ -38,7 +38,7 @@ export default function Header() {
             id="Search"
           />
         </a>
-      </nav>
+      </nav> */}
     </header>
   );
 }
