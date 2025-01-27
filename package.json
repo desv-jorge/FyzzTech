@@ -11,7 +11,10 @@
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
     "framer-motion": "^12.0.5",
+    "mongoose": "^8.9.5",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
