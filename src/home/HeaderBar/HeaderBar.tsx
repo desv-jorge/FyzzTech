@@ -11,10 +11,8 @@ export default function Header() {
           id="Logo"
         />
         <ul>
-          <li id="start">
-            <a href="" className="NavItens">
+          <li className="NavItens" id="start">
               Início
-            </a>
           </li>
           <li className="NavItens" id="catalog">
             Catálogo

@@ -9,8 +9,8 @@ header{
     
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
+    justify-content: flex-start;
+    align-items: start;
 
     
     nav{
@@ -18,9 +18,9 @@ header{
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        margin-left: 15px;
+        margin-left: 0px;
         #Logo{
-            margin-left: 15px;
+            margin-left: 0px;
             width: 85px;
             height: 85px;
         }
@@ -29,7 +29,9 @@ header{
             flex-direction: row;
             justify-content: flex-start;
             list-style: none;
-            gap: 30px;
+            gap: 60px;
+
+
             a{
                 text-decoration: none;
                 color: inherit;
@@ -37,6 +39,13 @@ header{
                 height: 30px;
                 font-size: 24px;
 
+            }
+            #start{
+                text-decoration: none;
+                color: inherit;
+                width: 30px;
+                height: 30px;
+                font-size: 24px;
             }
             #catalog{
                 text-decoration: none;
@@ -62,15 +71,18 @@ header{
                 padding: 5px;
                 z-index: 10;
                 width: 140px;
+
                 ul{
                     display: flex;
                     flex-direction: column;
                     padding:0 0 0 0px;
                     gap: 8px;
                     li{
+                        text-decoration: none;
                         a{
                         font-size: 14px;
-                        width: 100%;
+                        width: 120px;
+                        text-decoration: none;
                         &:hover{
                             background-color: rgb(32, 142, 146);
                         }}
@@ -111,13 +123,17 @@ header{
         height: 50px;
     }
     nav{
-        margin:0 0 0 10px;
+        margin-left: 10px;
         ul{
             gap: 0px;
             padding: 0;
             margin: 0;
             #start{
                 margin-left: 15px;
+                font-size: 14px;
+            }
+            li{
+                font-size: 14px;
             }
         }
         img{
@@ -126,22 +142,15 @@ header{
         }
     }
     header{
-        justify-content: center;
-        align-items: center;
-        gap: 25x;
+        justify-content: start;
+        align-items: start;
     }
     .NavItens{
         font-size: 14px;
     }
+
     #Logo{
         padding: 0;
-    }
-
-    a{
-        img{
-            max-width: 16px;
-            max-height: 16px;
-            padding: 0 0 px;
-        }
+        margin-left: 12px;
     }
 }
