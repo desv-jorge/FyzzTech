@@ -20,7 +20,7 @@ header{
         align-items: center;
         margin-left: 0px;
         #Logo{
-            margin-left: 0px;
+            margin-left: 15px;
             width: 85px;
             height: 85px;
         }
@@ -41,7 +41,7 @@ header{
 
             }
             #start{
-                text-decoration: none;
+                text-decoration: underline;
                 color: inherit;
                 width: 30px;
                 height: 30px;
@@ -121,36 +121,32 @@ header{
 @media (max-width: 360px){
     header{
         height: 50px;
-    }
-    nav{
-        margin-left: 10px;
-        ul{
-            gap: 0px;
-            padding: 0;
-            margin: 0;
-            #start{
-                margin-left: 15px;
-                font-size: 14px;
-            }
-            li{
-                font-size: 14px;
-            }
-        }
-        img{
-            max-width: 50px;
-            max-height: 50px;
-        }
-    }
-    header{
         justify-content: start;
         align-items: start;
-    }
-    .NavItens{
-        font-size: 14px;
-    }
-
-    #Logo{
-        padding: 0;
-        margin-left: 12px;
+        nav{
+            margin-left: 10px;
+            
+            #Logo{
+                padding: 0;
+                margin-left: 12px;
+                padding-bottom: 5px;
+            }
+            ul{
+                gap: 30px;
+                padding: 0;
+                margin-left: 15px;
+                #start{
+                    font-size: 18px;
+                }
+                #catalog{
+                    font-size: 18px;
+                }
+ 
+            }
+            img{
+                max-width: 50px;
+                max-height: 50px;
+            }
+        }
     }
 }
