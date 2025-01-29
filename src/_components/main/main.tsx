@@ -39,7 +39,7 @@ export default function Main() {
                           <h3>{dados.productName}</h3>
                           <p>{dados.priceProduct}</p>
                         </div>
-                        <button>Mais informações</button>
+                        <a href={dados.afLink} id="button">Mais informações</a>
                       </article>
                     ))}
                   </motion.section>
