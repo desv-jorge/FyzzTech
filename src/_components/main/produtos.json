@@ -3,18 +3,21 @@
         "CatalogTitle": "NOTEBOOKS - LAPTOPS",
         "imgProduct": "https://i.postimg.cc/bNyW2QX4/produto-1.png",
         "productName": "Notebook Gamer Acer Nitro 5",
-        "priceProduct": "R$ 3.479,00"
+        "priceProduct": "R$ 3.479,00",
+        "afLink":"http alguma coisa"
     },
     "produto-2":{
         "CatalogTitle": "FONES DE OUVIDO",
         "imgProduct": "https://i.postimg.cc/TPgCswMr/produto-2.png",
         "productName": "Fone de Ouvido Bluetooth",
-        "priceProduct": "R$ 74,90"
+        "priceProduct": "R$ 74,90",
+        "afLink":"http alguma coisa"
     },
     "produto-3":{
         "CatalogTitle": "TECLADOS",
         "imgProduct": "https://i.postimg.cc/tgJxcR1B/produto-3.png",
         "productName": "Teclado mecânico gamer",
-        "priceProduct": "R$ 119,99"
+        "priceProduct": "R$ 119,99",
+        "afLink":"http alguma coisa"
     }
 }
