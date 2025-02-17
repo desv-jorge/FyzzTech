@@ -18,7 +18,7 @@ const start = async ()=>{
 
 
     try{
-        await app.listen({ port : Number(port)})
+        await app.listen({ port : Number(port),  host: '0.0.0.0'})
     }catch(error){
         process.exit(1)
     }
