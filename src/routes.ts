@@ -8,7 +8,13 @@ import { CreateProdutoController } from "./controllers/CreateProdutoController";
 import { ListProdutoController } from "./controllers/ListProdutoController";
 import { DeleteProdutoController } from "./controllers/DeleteProdutoController";
 
+const port = process.env.PORT || 4000;
+
 export async function routes(fastify: FastifyInstance, options: FastifyPluginOptions){
+
+    fastify.get("/", async(request: FastifyRequest, reply: FastifyReply)=>{
+        return {"porta padrão" : port }
+    })
 
     fastify.get("/teste", async(request: FastifyRequest, reply: FastifyReply)=>{
         return {ok : true}
