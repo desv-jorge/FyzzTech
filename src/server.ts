@@ -3,7 +3,8 @@ import Fastify from "fastify";
 import { routes } from "./routes";
 
 const app = Fastify({logger : true})
-const port = 4000;
+const port = process.env.PORT || 4000;
+console.log(port)
 
 
 app.setErrorHandler((error,request,reply)=>{
@@ -14,10 +15,10 @@ const start = async ()=>{
 
     await app.register(cors)
     await app.register(routes)
-    const porta = port;
+
 
     try{
-        await app.listen({ port : porta})
+        await app.listen({ port : Number(port)})
     }catch(error){
         process.exit(1)
     }
