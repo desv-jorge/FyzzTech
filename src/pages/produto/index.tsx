@@ -3,6 +3,7 @@ import "./index.scss";
 import { FaHome } from "react-icons/fa";
 import Link from "next/link";
 import axios from "axios";
+import ListaProdutos from "./Listagem";
 
 // Correção da interface Produto
 interface Produto {
@@ -128,6 +129,7 @@ export default function AddProduto() {
             )}
           </div>
         </section>
+          <ListaProdutos/>
       </div>
     </div>
   );
