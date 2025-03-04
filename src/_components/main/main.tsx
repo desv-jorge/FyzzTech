@@ -17,20 +17,27 @@ export default function Main() {
   const [produtos, setProdutos] = useState<Produto[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const carouselRef = useRef<HTMLDivElement>(null);
-  const [width, setWidth] = useState(0);
+  const [categorias, setCategorias] = useState<{ [key: string]: Produto[] }>(
+    {}
+  );
 
-  useEffect(() => {
-    if (carouselRef.current) {
-      setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
-    }
-  }, [produtos]);
+  const carouselsRef = useRef<{ [key: string]: HTMLDivElement | null }>({});
+  const [widths, setWidths] = useState<{ [key: string]: number }>({});
 
   useEffect(() => {
     async function fetchProdutos() {
       try {
-        const response = await axios.get<Produto[]>("https://fyzztech.onrender.com/produto");
+        const response = await axios.get<Produto[]>(
+          "https://fyzztech.onrender.com/produto"
+        );
+        const produtosPorCategoria = response.data.reduce((acc, produto) => {
+          if (!acc[produto.catalog]) acc[produto.catalog] = [];
+          acc[produto.catalog].push(produto);
+          return acc;
+        }, {} as { [key: string]: Produto[] });
+
         setProdutos(response.data);
+        setCategorias(produtosPorCategoria);
       } catch (error) {
         console.error("Erro ao buscar produtos:", error);
         setError(true);
@@ -41,10 +48,25 @@ export default function Main() {
     fetchProdutos();
   }, []);
 
+  useEffect(() => {
+    // Ajusta a largura de cada carrossel após carregar os produtos
+    const newWidths: { [key: string]: number } = {};
+    Object.keys(carouselsRef.current).forEach((categoria) => {
+      const element = carouselsRef.current[categoria];
+      if (element) {
+        newWidths[categoria] = element.scrollWidth - element.offsetWidth;
+      }
+    });
+    setWidths(newWidths);
+  }, [produtos]);
+
   return (
     <main>
       <section>
-        <img src="https://i.postimg.cc/ZK6trT0y/Banner-1.png" alt="Banner de promoção" />
+        <img
+          src="https://i.postimg.cc/ZK6trT0y/Banner-1.png"
+          alt="Banner de promoção"
+        />
       </section>
 
       {loading ? (
@@ -52,26 +74,43 @@ export default function Main() {
       ) : error ? (
         <h1>Erro ao carregar produtos</h1>
       ) : produtos.length > 0 ? (
-        produtos.map((dados) => (
-          <section key={dados.id} id="container">
-            <h2 id={dados.catalog}>{dados.catalog}</h2>
+        Object.entries(categorias).map(([categoria, produtos]) => (
+          <section key={categoria} id="container">
+            <h2 id={categoria}>{categoria}</h2>
 
-            <motion.div ref={carouselRef} id="capsula" whileTap={{ cursor: "grabbing" }}>
-              <motion.section id="cards" drag="x" dragConstraints={{ right: -1, left: -width }}>
-                <article>
-                  {dados.imgPath ? (
-                    <img src={dados.imgPath} alt={dados.desc} />
-                  ) : (
-                    <p>Imagem indisponível</p>
-                  )}
-                  <div>
-                    <h3>{dados.desc}</h3>
-                    <p>{dados.price}</p>
-                  </div>
-                  <a href={dados.linkAfl} id="button" target="_blank" rel="noopener noreferrer">
-                    Mais informações
-                  </a>
-                </article>
+            <motion.div
+              ref={(el) => {
+                if (el) carouselsRef.current[categoria] = el;
+              }}
+              id="capsula"
+              whileTap={{ cursor: "grabbing" }}
+            >
+              <motion.section
+                id="cards"
+                drag="x"
+                dragConstraints={{ right: -1, left: -widths[categoria] || 0 }}
+              >
+                {produtos.map((dados) => (
+                  <article key={dados.id}>
+                    {dados.imgPath ? (
+                      <img src={dados.imgPath} alt={dados.desc} />
+                    ) : (
+                      <p>Imagem indisponível</p>
+                    )}
+                    <div>
+                      <h3>{dados.desc}</h3>
+                      <p>{dados.price}</p>
+                    </div>
+                    <a
+                      href={dados.linkAfl}
+                      id="button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Mais informações
+                    </a>
+                  </article>
+                ))}
               </motion.section>
             </motion.div>
           </section>
