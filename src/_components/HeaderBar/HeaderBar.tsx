@@ -1,5 +1,5 @@
-import { style } from "framer-motion/client";
 import "./HeaderBar.scss";
+import { categorias } from "@/_Catalog/categorias";
 
 export default function Header() {
   return (
@@ -18,11 +18,11 @@ export default function Header() {
             Catálogo
             <div className="submenu">
               <ul>
-                <li><a href="#NOTEBOOKS - LAPTOPS">NOTEBOOKS</a></li>
-                <li><a href="#FONES DE OUVIDO">FONES DE OUVIDO</a></li>
-                <li><a href="">PEÇAS PARA PC</a></li>
-                <li><a href="#TECLADOS">TECLADOS</a></li>
-                <li><a href="">MOUSES</a></li>
+                {categorias.map((catalog)=>{
+                  return(
+                    <li><a href={`#${catalog}`}>{catalog}</a></li>
+                  )
+                })}
               </ul>
             </div>
           </li>
