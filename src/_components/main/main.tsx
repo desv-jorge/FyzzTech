@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { FiCommand } from "react-icons/fi";
 import axios from "axios";
 import "./main.scss";
 
@@ -70,7 +71,13 @@ export default function Main() {
       </section>
 
       {loading ? (
-        <h1>Carregando produtos...</h1>
+        <div id="LoadingCase">
+          <p>aguarda um poquinho que o site é gratuito</p>
+          <br />
+          <p>(os produtos já vão aparecer)</p>
+          <br />
+          <FiCommand className="loading-icon" />
+        </div>
       ) : error ? (
         <h1>Erro ao carregar produtos</h1>
       ) : produtos.length > 0 ? (
