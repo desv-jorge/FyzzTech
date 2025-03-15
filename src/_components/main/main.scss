@@ -99,6 +99,34 @@ section {
     }
 }
 
+#LoadingCase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 600px;
+    p{
+        font-size: 1.8rem;
+    }
+    .loading-icon {
+        color: teal;
+        font-size: 4rem;
+        animation: animate 2s infinite;
+      }
+      
+      @keyframes animate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(720deg);
+        }
+      }
+}
+
 /* 🔹 Responsividade */
 @media (max-width: 630px) {
     section {
